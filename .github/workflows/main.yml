@@ -17,4 +17,4 @@ jobs:
       - name: Create Issue Branch
         uses: sasha1107/my-first-repository@main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.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 }}
