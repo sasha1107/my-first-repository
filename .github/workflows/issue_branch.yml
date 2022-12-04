@@ -14,7 +14,7 @@ on:
   autoCloseIssue: true
   commentMessage: '${issue.title} 이슈에 대한 새로운 브랜치 ${branchName}가 생성되었습니다!'
 jobs:
-  issue_branch_job:
+  create_issue_branch_job:
     runs-on: ubuntu-latest
     steps:
       - name: Create Issue Branch
