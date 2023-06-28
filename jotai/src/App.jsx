@@ -1,14 +1,14 @@
 import React from 'react';
 import ParentContext from './pages/ParentContext';
 import ParentJotai from './pages/ParentJotai';
-import { ColorProvider } from './context/ColorContext';
+import { CounterContextProvider } from './context/CounterContext';
 
 function App() {
     return (
         <>
-            <ColorProvider>
+            <CounterContextProvider>
                 <ParentContext />
-            </ColorProvider>
+            </CounterContextProvider>
             <ParentJotai />
         </>
     );

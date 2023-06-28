@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import Sub from './Sub';
 import { useAtom } from 'jotai';
-import { countAtom } from '../atom/count';
+import { countAtom2 } from '../atom/count';
 
-const Jotai = () => {
+const Jotai2 = () => {
     const wrapperRef = useRef(null);
-    const [count, setCount] = useAtom(countAtom);
+    const [count2, setCount] = useAtom(countAtom2);
 
     useEffect(() => {
         console.log('Jotai: render');
@@ -19,7 +19,7 @@ const Jotai = () => {
             <h1>Jotai 👻</h1>
             <div className='flex justify-evenly'>
                 <button onClick={() => setCount(c => c - 1)}>-</button>
-                <p>Count: {count}</p>
+                <p>Count: {count2}</p>
                 <button onClick={() => setCount(c => c + 1)}>+</button>
             </div>
             <Sub />
@@ -27,4 +27,4 @@ const Jotai = () => {
     );
 };
 
-export default Jotai;
+export default Jotai2;

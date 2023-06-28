@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { useContextDispatch, useContextCount } from '../context/CounterContext';
 import Sub from './Sub';
 
-const Context = () => {
+const Context2 = () => {
     const wrapperRef = useRef(null);
     const dispatch = useContextDispatch();
-    const { count } = useContextCount();
+    const { count2 } = useContextCount();
     useEffect(() => {
         console.log('Context: render');
         wrapperRef.current.animate(
@@ -17,9 +17,9 @@ const Context = () => {
         <section ref={wrapperRef}>
             <h1>Context ⚛️</h1>
             <div className='flex justify-evenly'>
-                <button onClick={() => dispatch({ type: 'sub' })}>-</button>
-                <p>Count: {count}</p>
-                <button onClick={() => dispatch({ type: 'add' })}>+</button>
+                <button onClick={() => dispatch({ type: 'sub2' })}>-</button>
+                <p>Count: {count2}</p>
+                <button onClick={() => dispatch({ type: 'add2' })}>+</button>
             </div>
             <span>카운트를 늘리면 하위 컴포넌트까지 리렌더링된다.</span>
             <Sub />
@@ -27,4 +27,4 @@ const Context = () => {
     );
 };
 
-export default Context;
+export default Context2;

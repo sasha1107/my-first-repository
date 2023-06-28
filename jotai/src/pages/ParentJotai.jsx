@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Child1 from './Child1';
 import Child2 from './Child2';
 import Jotai from './Jotai';
+import Jotai2 from './Jotai2';
 
 const ParentJotai = () => {
     const wrapperRef = useRef(null);
@@ -18,6 +19,7 @@ const ParentJotai = () => {
             <Child1>
                 <Child2>
                     <Jotai />
+                    <Jotai2 />
                 </Child2>
             </Child1>
         </section>
