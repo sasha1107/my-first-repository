@@ -1,16 +1,17 @@
 import React from 'react';
-import ParentContext from './pages/ParentContext';
-import ParentJotai from './pages/ParentJotai';
-import { CounterContextProvider } from './context/CounterContext';
+import Root from './pages/Root';
+import JotaiDeep from './pages/JotaiDeep';
+
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 
 function App() {
     return (
-        <>
-            <CounterContextProvider>
-                <ParentContext />
-            </CounterContextProvider>
-            <ParentJotai />
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Root />} />
+                <Route path="/jotai" element={<JotaiDeep />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
