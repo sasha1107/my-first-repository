@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/my-first-repository/static/css/main.43821bf8.css",
-    "main.js": "/my-first-repository/static/js/main.a4c0741e.js",
+    "main.js": "/my-first-repository/static/js/main.ff2629bd.js",
     "index.html": "/my-first-repository/index.html",
     "main.43821bf8.css.map": "/my-first-repository/static/css/main.43821bf8.css.map",
-    "main.a4c0741e.js.map": "/my-first-repository/static/js/main.a4c0741e.js.map"
+    "main.ff2629bd.js.map": "/my-first-repository/static/js/main.ff2629bd.js.map"
   },
   "entrypoints": [
     "static/css/main.43821bf8.css",
-    "static/js/main.a4c0741e.js"
+    "static/js/main.ff2629bd.js"
   ]
 }
