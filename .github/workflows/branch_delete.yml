@@ -1,4 +1,4 @@
-name: Deploy Portfolio - Dev
+name: test delete branch
 
 on:
   delete:
