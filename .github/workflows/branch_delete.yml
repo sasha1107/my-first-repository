@@ -1,0 +1,17 @@
+name: Deploy Portfolio - Dev
+
+on:
+  delete:
+    branches:
+      - hotfix/*
+      - epic/*
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+	
+    steps:
+    - uses: actions/checkout@v2
+	
+    - name: deleted branch
+      run: echo Hello, world!
